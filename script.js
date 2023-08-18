@@ -149,10 +149,89 @@ gravedad. Escribe una función que calcule el peso.
 + 32. Escriba una función que convierta °C a °F convertCelsiusToFahrenheit.
 */
 
-function convC(){
-    c = Number(prompt("Ingrese la temperatura (Centigrados)"))
-    f = (c * 9 / 5) + 32
-    document.write("La temperatura en Farenheit es " + f + " °F")
+// function convC(){
+//     c = Number(prompt("Ingrese la temperatura (Centigrados)"))
+//     f = (c * 9 / 5) + 32
+//     document.write("La temperatura en Farenheit es " + f + " °F")
+// }
+
+// convC()
+
+/*
+13. El índice de masa corporal (IMC) se calcula de la siguiente manera: bmi = peso en 
+Kg / (altura x altura) en m2. Escribe una función que calcule bmi. El IMC se utiliza 
+para definir de forma amplia diferentes grupos de peso en adultos de 20 años o más.
+Compruebe si una persona tiene un peso inferior al normal, normal, con sobrepeso u
+obeso según la información que se proporciona a continuación.
+Los mismos grupos se aplican tanto a hombres como a mujeres.
+Bajo peso: el IMC es inferior a 18,5
+Peso normal: el IMC es de 18,5 a 24,9
+Sobrepeso: el IMC es de 25 a 29,9
+Obeso: IMC es 30 o más
+*/
+
+// function IMC(){
+//     peso = Number(prompt("Ingrese su peso (Kg)"))
+//     altura = Number(prompt("Ingrese su altura (Metros)"))
+//     bmi = peso / (altura * altura)
+//    }
+
+// IMC()
+
+//  if(bmi <= 18.5){
+//     document.write("Bajo peso");
+//     }
+//     else if(bmi >= 18.5 && bmi <= 24.9){
+//         document.write("Peso normal");
+//     }
+//     else if(bmi >= 25 && bmi <= 29.9){
+//          document.write("Sobrepeso");
+//     }
+//     else if(bmi >=30){
+//         document.write("Obeso");
+//     }
+
+/*
+14. Escribe una función llamada checkSeason, toma un parámetro de mes y devuelve la
+estación: Otoño, Invierno, Primavera o Verano
+*/
+
+// function chechSeason(){
+//     mes = prompt("Ingrese un mes")
+//     if(mes == "septiembre" || mes == "octubre" || mes == "noviembre"){
+//         document.write("El mes " + mes + " esta en primavera")
+//     }
+//     else if(mes == "diciembre" || mes == "enero" || mes == "febrero"){
+//         document.write("El mes " + mes + " esta en verano")
+//     }
+//     else if(mes == "marzo" || mes == "abril" || mes == "mayo"){
+//         document.write("El mes " + mes + " esta en otoño")
+//     }
+//     else if(mes == "junio" || mes == "julio" || mes == "agosto"){
+//         document.write("El mes " + mes + " esta en invierno")
+//     }
+// }
+
+// chechSeason()
+
+/*
+15. Math.max devuelve su argumento más grande. Escriba una función findMax que 
+tome tres argumentos y devuelva su máximo sin usar el método Math.max.
+consola.log(buscarMax(0, 10, 5))
+consola.log(buscarMax(0, -10, -2))
+*/
+
+function findMax(num1, num2, num3){
+    num1 = prompt("Escriba un numero")
+    num2 = prompt("Escriba un numero")
+    num3 = prompt("Escriba un numero")
+    if(num1>num2 && num1>num3){
+        console.log("El numero mas grande es " + num1);
+    } else if(num2>num1 && num2>num3){
+        console.log("El numero mas grande es " + num2);
+    } else if(num3>num2 && num3>num1){
+        console.log("El numero mas grande es " + num1);
+}
 }
 
-convC()
+findMax()
